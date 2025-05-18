@@ -1,10 +1,11 @@
 $(document).on("click", ".nav-input", function () {
     $(".nav-input").each(function () {
-      $(this).removeClass("bg-gray-900");
+      $(this).removeClass("bg-gray-900 shadow-xl/60");
     });
-    $(this).addClass("bg-gray-900");
+    $(this).addClass("bg-gray-900 shadow-xl/60");
   });
   
+ 
 //   $(document).on("click", "#profile-img", function () {
 //     if ($("#profile-icon").hasClass("hidden")) {
 //       $("#profile-icon").removeClass("hidden");
@@ -27,21 +28,27 @@ $(document).on("click", "#home", function () {
     $(".project-menu").each(function () {
       $(this).addClass("hidden");
     });
-    $(".resume-menu").each(function () {
+    $(".about-menu").each(function () {
       $(this).addClass("hidden");
     });
+    $(".contact-menu").each(function () {
+        $(this).addClass("hidden");
+      });
   });
 
-$(document).on("click", "#resume", function () {
+$(document).on("click", "#about", function () {
     $(".home-menu").each(function () {
       $(this).addClass("hidden");
     });
     $(".project-menu").each(function () {
       $(this).addClass("hidden");
     });
-    $(".resume-menu").each(function () {
+    $(".about-menu").each(function () {
       $(this).removeClass("hidden");
     });
+    $(".contact-menu").each(function () {
+        $(this).addClass("hidden");
+      });
   });
 
 $(document).on("click", "#projects", function () {
@@ -51,7 +58,30 @@ $(document).on("click", "#projects", function () {
     $(".project-menu").each(function () {
       $(this).removeClass("hidden");
     });
-    $(".resume-menu").each(function () {
+    $(".about-menu").each(function () {
       $(this).addClass("hidden");
     });
+    $(".contact-menu").each(function () {
+        $(this).addClass("hidden");
+      });
+  });
+  
+
+  $(document).on("click", "#contact", function () {
+    $(".home-menu").each(function () {
+      $(this).addClass("hidden");
+    });
+    $(".project-menu").each(function () {
+      $(this).addClass("hidden");
+    });
+    $(".about-menu").each(function () {
+      $(this).addClass("hidden");
+    });
+    $(".contact-menu").each(function () {
+        $(this).removeClass("hidden");
+      });
+  });
+
+  $(document).on("click", ".needweb", function () {
+    $(".needin").addClass("bg-gray-900 shadow-xl/60");
   });

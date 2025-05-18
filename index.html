@@ -10,24 +10,28 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet">
   </head>
-  <body class="bg-slate-800">
+  <body class="bg-slate-800 scroll-smooth">
+    <!--first loading img-->
     <div class="loading-page h-screen flex justify-center items-center">
-      <div>       <img class="size-30  shadow-xl/20 rounded-full"
+      <div>       <img class="size-30  shadow-xl/90 rounded-full border-6 border-gray-600"
         src="./userimg/a.jpeg.png"
         alt> <br><br>
-        <p class="text-sm text-white animate-bounce "> 
-        <i class="fa-solid fa-spinner fa-rotate-90 motion-safe:animate-spin" style="color: #ffffff;"></i>
-         &nbsp;&nbsp;Loading (Please wait....)</p></div>
+        <p class="text-sm text-white  "> 
+        <i class="fa-solid fa-spinner fa-rotate-90 motion-safe:animate-spin text-shadow-lg" style="color: #ffffff;"></i>
+         &nbsp;&nbsp;Loading <span class="text-yellow-500 animate-ping">(Please wait....)</span></p></div>
     </div>
+     <!--first loading img end-->
    <span class="main-page hidden h-screen flex justify-center items-center">
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mx-auto max-w-7xl p-2 sm:p-6 lg:px-8  rounded-3xl mt-3 ">
       <!--First Role-->
       <div class="bg-gray-900 p-5 col-span-1 rounded-3xl max-sm:hidden shadow-xl/20">
           <img src="./userimg/IMG_3884.JPG" alt
             class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out"><br><br>
-          <p class="text-yellow-500 text-center text-3xl text-shadow-lg hover:-translate-y-3 duration-300">Mr . Aung Pyae Oo</p><br>
-          <p class="text-yellow-400 text-center text-shadow-lg hover:-translate-y-3 duration-300">Web
-              Developer</p><br>
+          <p class="text-yellow-600 text-center text-2xl font-bold text-shadow-lg hover:-translate-y-3 duration-300 hover:text-yellow-400 cursor-pointer">Mr . Aung Pyae Oo</p><br>
+          <p class="text-yellow-600 text-center font-bold text-shadow-lg hover:-translate-y-3 duration-300 home-menu hover:text-yellow-400 cursor-pointer "><span class="animate-ping">(</span>&nbsp;HOME&nbsp;<span class="animate-ping">)</span></p>
+          <p class="text-yellow-600 text-center font-bold text-shadow-lg hover:-translate-y-3 duration-300 hidden about-menu hover:text-yellow-400 cursor-pointer"> <span class="animate-ping">(</span>&nbsp;ABOUT&nbsp;<span class="animate-ping">)</span></p>
+          <p class="text-yellow-600 text-center font-bold text-shadow-lg hover:-translate-y-3 duration-300 hidden project-menu hover:text-yellow-400 cursor-pointer"><span class="animate-ping">(</span>&nbsp;PROJECTS&nbsp;<span class="animate-ping">)</span></p><br>
+
          
           <img src="./userimg/webuse.svg" alt class="mx-auto w-60 mt-5"><br><br>
         </div>
@@ -35,12 +39,14 @@
       <!--Second Role-->
       <div class="col-span-1 md:col-span-3  bg-gray-900 rounded-3xl shadow-xl/20">
       <!--Navbar-->
-      <nav class="bg-gray-700 col-span-3 rounded-t-3xl shadow-xl/40">
+      <nav class="bg-gray-700 col-span-3 rounded-t-3xl shadow-xl/60 ">
           <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-between">
               <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
-                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+                <button type="button" class="relative inline-flex items-center justify-center 
+                rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden 
+                focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
                   <span class="absolute -inset-0.5"></span>
                   <span class="sr-only">Open main menu</span>
                   <!--
@@ -65,9 +71,9 @@
                 <div class="hidden sm:ml-6 sm:block">
                   <div class="flex space-x-4">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white nav-input bg-gray-900" id="home" aria-current="page">Home</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input" id="resume">Resume</a>
-                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input" id="projects">Projects</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white nav-input bg-gray-900 shadow-xl/60" id="home" aria-current="page">Home</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input" id="about">About</a>
+                    <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input needin" id="projects">Projects</a>
                     <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input" id="contact">Contact</a>
                   </div>
                 </div>
@@ -87,8 +93,6 @@
           </div>
         </nav>
         <!--Navbar End-->
-
-      <!--Navbar-->
      
       <!--4 part in 2nd Role-->
     <div class="grid grid-cols-2 gap-4 bg-gray-900 rounded-3xl">
@@ -96,50 +100,27 @@
         <img src="./userimg/IMG_3884.JPG" alt
           class="rounded-full w-60 mx-auto mt-5 shadow-xl/20 transition delay-300 duration-300 ease-in-out">
       </div>
-      <!--About-->
-      <div class=" p-5  rounded-3xl m-3 bg-gray-800 shadow-xl/20 col-span-2 home-menu">
-          <p class="text-3xl text-yellow-600 font-bold text-shadow-lg">About
-            Me</p><br><br>
-          <p class=" text-gray-400 text-xs">I was born in Ah Thoke.Ayeyarwady
-            Division,Myanmar. But now 1 live in Miki
-            Town. Hyogo Division Japan. And then I
-            was learning Web Development.Since
-            About 2024 December I started learn
-            Java Script Programming, And still
-            learning Html, CSS, java-script,
-            bootstrap too. You can view my learning
-            project in Project section.
-          </p>
+        <!--Home Section-->
+    <div class=" p-5  rounded-3xl m-3 bg-gray-800 shadow-xl/20 col-span-2 home-menu">
+          <img class="float-right size-60 cursor-pointer " src="./userimg/webuse2.svg" />
+          <p class="text-3xl text-yellow-600 font-bold text-shadow-lg hover:text-yellow-400 cursor-pointer" >HELLO WORLD!</p><br><br>
+          <p class=" text-gray-400 text-xs">I'm &nbsp;<span class="text-yellow-600 font-bold">a Creative</span> Frontend developer and Web designer from  &nbsp;<span class="text-yellow-600 font-bold">Japan</span>.
+            I create custom websites to help businesses do better online.I used &nbsp;<span class="text-yellow-600 font-bold">HTML</span>, 
+            &nbsp;<span class="text-yellow-600 font-bold">CSS</span> and &nbsp;<span class="text-yellow-600 font-bold">Java Script</span>.
+          </p><br><br>
+          <p class="text-gray-400 cursor-pointer"><i class="fa-solid fa-phone text-2xl shadow-xl/20" style="color: #d5631c;"> </i>
+            <span class="text-xs"> &nbsp;&nbsp;&nbsp;09063978426</span></p>
           <br>
-          <p class="text-gray-400"><i class="fa-solid fa-phone text-2xl shadow-xl/20" style="color: #d5631c;"> </i>
-            <span class="text-xs"> &nbsp;&nbsp;&nbsp;09912442013</span></p>
-          <br>
-          <p class="text-gray-400"> <i class="fa-brands fa-facebook text-3xl shadow-xl/20" style="color: #1557ff;"></i>
+          <p class="text-gray-400 cursor-pointer"> <i class="fa-brands fa-facebook text-3xl shadow-xl/20" style="color: #1557ff;"></i>
             <a target="_blank" class="text-xs"
               href="https://shorturl.at/neGTK">
               &nbsp;&nbsp;https://shorturl.at/neGTK</a>
           </p>
           <br>
       </div>
-       <!--I have-->
-      <div class="bg-gray-800 p-5 rounded-3xl m-3 shadow-xl/20 home-menu">
-          <p class="text-3xl text-yellow-600 font-bold text-shadow-lg ">I'm also have </p>
-          <br>
-          <ul class="text-gray-400 text-xs">
-            <li>A website design perspective.</li><br>
-            <li>I passed Net Test N2 for Japanese language.</li><br>
-            <li>I can work in accordance with Deadline.</li><br>
-            <li>I can work in a team and have a strong desire to
-              learn.</li><br>
-            <li>I can complete tasks within the specified time.</li><br>
-            <li>I have good teamwork and communication skills.</li>
-
-          </ul>
-          <br>
-      </div>
        <!--Skill-->
-      <div class=" max-w-7xl p-5 sm:p-6 lg:px-8 bg-gray-800  rounded-3xl m-3 shadow-xl/20 home-menu" id="skill">
-        <p class="text-3xl text-yellow-600 font-bold text-shadow-lg">Skills</p><br>
+      <div class="p-5  bg-gray-800  rounded-3xl m-3 shadow-xl/20 home-menu" id="skill">
+        <p class="text-3xl text-yellow-600 font-bold text-shadow-lg hover:text-yellow-400 cursor-pointer">Skills</p><br>
         <div class="grid grid-cols-3 max-sm:grid-cols-1">
           <div class="col-span-1">
             <p>
@@ -181,43 +162,140 @@
   
         </div>
       </div>
+         <!--Need Website?-->
+      <div class=" p-5 sm:p-6 lg:px-8 bg-gray-800  rounded-3xl m-3 shadow-xl/20 home-menu">
+       <p class="text-3xl text-gray-400 font-bold text-shadow-lg hover:text-yellow-400 cursor-pointer">DO YOU</p><br>
+       <p class="text-3xl text-gray-400 font-bold text-shadow-lg hover:text-yellow-400 cursor-pointer">NEED A</p><br>
+       <p class="text-3xl text-gray-400 font-bold text-shadow-lg hover:text-yellow-400 cursor-pointer">WEBSITE?</p><br>
+
+        <p class="text-1xl text-yellow-600 font-bold text-shadow-lg ">What a coincidence,websides are my thing!</p><br>
+       <span class="grid grid-cols-3">
+        <button class="rounded-full p-3 col-span-2 text-shadow-lg nav-input shadow-xl/30 cursor-pointer 
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 needweb  shadow-xl/60" 
+        id="projects" style="background: #c36b00; color: #ffffff; "> My Projects!!</button>
+       </span>
+      
+      </div>
+      <!--Home Section End-->
+      <!--About Section-->
+      <div class=" p-5  rounded-3xl m-3 bg-gray-800 shadow-xl/20 col-span-2 hidden about-menu">
+          <p class="text-3xl text-yellow-600 font-bold text-shadow-lg">About
+            Me</p><br><br>
+          <p class=" text-gray-400 text-xs">I was born in Ah Thoke.Ayeyarwady
+            Division,Myanmar. But now I live in Miki
+            Town. Hyogo Division Japan. And then I
+            was learning Web Development.Since
+            About 2024 December I started learn
+            Java Script Programming, And still
+            learning Html, CSS, java-script,
+            bootstrap too. You can view my learning
+            project in <span class="text-yellow-600 font-bold">Projects</span> section.
+          </p>
+          <br>
+          <p class="text-gray-400 cursor-pointer"><i class="fa-solid fa-phone text-2xl shadow-xl/20" style="color: #d5631c;"> </i>
+            <span class="text-xs"> &nbsp;&nbsp;&nbsp;09063978426</span></p>
+          <br>
+          <p class="text-gray-400 cursor-pointer"> <i class="fa-brands fa-facebook text-3xl shadow-xl/20" style="color: #1557ff;"></i>
+            <a target="_blank" class="text-xs"
+              href="https://shorturl.at/neGTK">
+              &nbsp;&nbsp;https://shorturl.at/neGTK</a>
+          </p>
+          <br>
+      </div>
+        <!--I have-->
+      <div class="bg-gray-800 p-5 rounded-3xl m-3 shadow-xl/20 hidden about-menu">
+          <p class="text-3xl text-yellow-600 font-bold text-shadow-lg ">I'm also have </p>
+          <br>
+          <ul class="text-gray-400 text-xs">
+            <li>A website design perspective.</li><br>
+            <li>I passed <span class="text-yellow-600">Net-Test N2 for Japanese language</span>.</li><br>
+            <li>I can work in accordance with Deadline.</li><br>
+            <li>I can work in a team and have a strong desire to
+              learn.</li><br>
+            <li>I can complete tasks within the specified time.</li><br>
+            <li>I have good teamwork and communication skills.</li>
+
+          </ul>
+          <br>
+      </div>
        <!--Graduated-->
-      <div class="bg-gray-800 p-5  rounded-3xl m-3 shadow-xl/20 hidden resume-menu">
+      <div class="bg-gray-800 p-5  rounded-3xl m-3 shadow-xl/20 hidden about-menu">
           <p class="text-3xl text-yellow-600 font-bold text-shadow-lg">I was graduated from</p>
           <br>
-          <p class="text-gray-400 text-xs">Hinthada Technological
-            University got Bachelor Of
-            Technology(2015) and Bachelor OF
-            Engineering (2020) major of Electronic
-            Communication.l also got the chance of
+          <span>
+          <img class="float-left mask-x-from-70% mask-x-to-90% mask-y-from-80% mask-y-to-90%  size-40 rounded-sx" src="./userimg/grauap.JPG" />
+          <p class="text-gray-400 text-xs ">Hinthada Technological
+            University got <span class="text-yellow-600">Bachelor Of
+              Technology(2015) and Bachelor OF
+              Engineering (2020) major of Electronic
+              Communication</span>. l also got the chance of
             Master Of Engineering and I could not
             attend for some many reason!You can check
             graduated certifications in skills section.
           </p>
-          <br>
-          <br>
+        </span>
       </div>
-      <!--Resume-->
-      <div class="bg-gray-800 p-5  rounded-3xl m-3 shadow-xl/20 hidden project-menu">
-        <p class="text-3xl text-yellow-600 font-bold text-shadow-lg">Project</p>
-        <br>
-        <p class="text-gray-400 text-xs">Hinthada Technological
-          University got Bachelor Of
-          Technology(2015) and Bachelor OF
-          Engineering (2020) major of Electronic
-          Communication.l also got the chance of
-          Master Of Engineering and I could not
-          attend for some many reason!You can check
-          graduated certifications in skills section.
-        </p>
-        <br>
-        <br>
+      <!--About Section end-->
+      <!--Project Section-->
+     <div class="bg-gray-800 p-5  rounded-3xl m-3 shadow-xl/20 hidden project-menu grid grid-cols-5 col-span-2 gap-5 max-sm:grid-cols-1">
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+      <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Online Shopping</p><br>
+      <img class="rounded-xl shadow-xl/90 shadow-xl/90 " src="./userimg/olineshop.jpeg" alt><br>
+     
+      </div>
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+        <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Project Header</p><br>
+        <img class="rounded-xl shadow-xl/90" src="./userimg/webuser1.jpeg" alt><br>
+        
+      </div>
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+          <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Project Header</p><br>
+          <img class="rounded-xl shadow-xl/90" src="./userimg/webuser1.jpeg" alt><br>
+          
+      </div>
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+        <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Project Header</p><br>
+        <img class="rounded-xl shadow-xl/90" src="./userimg/webuser1.jpeg" alt><br>
+        
+      </div> 
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+        <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Project Header</p><br>
+        <img class="rounded-xl shadow-xl/90" src="./userimg/webuser1.jpeg" alt><br>
+        
+      </div>
+      <div class="shadow-xl/90 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-4 duration-300">
+        <p class="bg-black text-gray-400 rounded-xl p-2 shadow-xl/60">Project Header</p><br>
+        <img class="rounded-xl shadow-xl/90" src="./userimg/webuser1.jpeg" alt><br>
+        
+      </div>  
+    </div> 
+     <!--Project Section End-->
+    <!--Contact-->
+    <div class="bg-gray-800 p-5 rounded-3xl m-3 shadow-xl/20 hidden contact-menu col-span-2">
+      <p class="text-3xl text-yellow-600 font-bold text-shadow-lg ">Contact </p><br><br>
+      <!--contact-btn-->
+     <div class="flex justify-between gap-4 ">
+      <button class="rounded-full p-2 col-span-2 text-shadow-lg nav-input shadow-xl/30 cursor-pointer 
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 needweb  shadow-xl/60  text-2xl" 
+        id="projects" style="background: #ff9a1e; ">&nbsp; Call &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-phone text-2xl shadow-xl/20" style="color: #0856ff;"> </i>&nbsp;
+      </button>
+      <button class="rounded-full p-2 col-span-2 text-shadow-lg nav-input shadow-xl/30 cursor-pointer 
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 needweb  shadow-xl/60  text-2xl" 
+        id="projects" style="background: #ff9a1e; ">&nbsp;Facebook &nbsp;&nbsp;&nbsp;<i class="fa-brands fa-facebook text-2xl shadow-xl/20" style="color: #0856ff;"></i>&nbsp;
+      </button>
+      <button class="rounded-full p-2 col-span-2 text-shadow-lg nav-input shadow-xl/30 cursor-pointer 
+        transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 needweb  shadow-xl/60  text-2xl" 
+        id="projects" style="background: #ff9a1e; ">&nbsp; Email &nbsp;&nbsp;&nbsp;<i class="fa-solid fa-paper-plane text-2xl shadow-xl/20" style="color: #0856ff;"></i>&nbsp;
+      </button>
+     </div>
+      <!--contact-btn-->
     </div>
-      
-    </div>
-  </div>
-      <!--4 part in 2nd Role-->
+    <!--Contact End-->
+    
 
+    </div>
+      <!--4 part in 2nd Role-->
+    </div>
       <!--Second Role End-->
   </div>
    </span>
