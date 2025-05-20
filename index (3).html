@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Aung</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet">
+  </head>
+  <body class="bg-slate-800 scroll-smooth">
+    <!-- Loading Screen -->
+    <div class="loading-page h-screen flex justify-center items-center shadow-xl/60">
+      <div>
+        <img
+          class="w-24 h-24 shadow-xl rounded-full border-4 border-gray-600"
+          src="./userimg/a.jpeg.png"
+          alt="Loading User" />
+        <br /><br />
+        <p class="text-sm text-white flex items-center justify-center gap-2">
+          <i class="fa-solid fa-spinner fa-spin text-lg"
+            style="color: #ffffff;"></i>
+          Loading
+        </p><br><br>
+        <p class="text-yellow-500 text-xs animate-ping">&nbsp;&nbsp;&nbsp;&nbsp;(Please
+          wait....)</p>
+      </div>
+    </div>
+    <!-- End Loading Screen -->
+
+    <!-- Main Content -->
+    <main
+      class="main-page hidden min-h-screen flex justify-center items-center ">
+      <div
+        class="w-full max-w-7xl mx-auto p-2 sm:p-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-4 rounded-3xl  h-screen ">
+        <!-- Sidebar/Profile (hidden on mobile) -->
+        <aside
+          class="hidden md:block bg-gray-900 p-5 col-span-1 rounded-3xl shadow-xl/60">
+          <img src="./userimg/IMG_3884.JPG" alt="Profile"
+            class="rounded-full w-40 mx-auto mt-5 shadow-xl/60 transition duration-300" />
+          <br /><br />
+          <p
+            class="text-yellow-600 text-center text-2xl font-bold hover:text-yellow-400 cursor-pointer transition">Mr.
+            Aung Pyae Oo</p>
+          <br />
+          <!-- Sidebar Navigation -->
+          <nav class="space-y-2">
+            <p
+              class="text-yellow-600 text-center font-bold home-menu cursor-pointer hover:text-yellow-400 transition">
+              <span class="animate-ping">(</span>&nbsp;HOME&nbsp;<span
+                class="animate-ping">)</span>
+            </p>
+            <p
+              class="text-yellow-600 text-center font-bold about-menu cursor-pointer hover:text-yellow-400 transition hidden">
+              <span class="animate-ping">(</span>&nbsp;ABOUT&nbsp;<span
+                class="animate-ping">)</span>
+            </p>
+            <p
+              class="text-yellow-600 text-center font-bold project-menu cursor-pointer hover:text-yellow-400 transition hidden">
+              <span class="animate-ping">(</span>&nbsp;PROJECTS&nbsp;<span
+                class="animate-ping">)</span>
+            </p>
+            <p
+              class="text-yellow-600 text-center font-bold contact-menu cursor-pointer hover:text-yellow-400 transition hidden">
+              <span class="animate-ping">(</span>&nbsp;CONTACT&nbsp;<span
+                class="animate-ping">)</span>
+            </p>
+          </nav>
+          <br />
+          <img src="./userimg/webuse.svg" alt="Web Use"
+            class="mx-auto w-40 mt-5" />
+        </aside>
+        <!-- End Sidebar/Profile -->
+
+        <!-- Main Sections -->
+        <section
+          class="col-span-1 md:col-span-3 bg-gray-900 rounded-3xl shadow-xl/60 flex flex-col ">
+          <!-- Top Navbar (responsive) -->
+          <nav class="bg-gray-700 rounded-t-3xl shadow-xl mb-4">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+              <div class="flex h-16 items-center justify-between">
+                <!-- Navbar Links -->
+                <div class="flex-1 flex items-center justify-center">
+                  <div id="navbar-links" class="flex space-x-4">
+                    <a href="#"
+                      class="rounded-md px-3 py-2 text-sm font-medium text-white nav-input bg-gray-900 shadow-xl/60"
+                      id="home" aria-current="page">Home</a>
+                    <a href="#"
+                      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                      id="about">About</a>
+                    <a href="#"
+                      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                      id="projects">Projects</a>
+                    <a href="#"
+                      class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                      id="contact">Contact</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Mobile Menu Dropdown -->
+              <div id="mobile-menu" class="md:hidden hidden mt-2">
+                <a href="#"
+                  class="block px-3 py-2 text-sm font-medium text-white nav-input bg-gray-900 shadow-xl/60"
+                  id="home-mobile">Home</a>
+                <a href="#"
+                  class="block px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                  id="about-mobile">About</a>
+                <a href="#"
+                  class="block px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                  id="projects-mobile">Projects</a>
+                <a href="#"
+                  class="block px-3 py-2 text-sm font-medium text-gray-300 nav-input"
+                  id="contact-mobile">Contact</a>
+              </div>
+            </div>
+          </nav>
+          <!-- End Navbar -->
+
+          <!-- Responsive Profile for Mobile -->
+          <div
+            class="md:hidden bg-black p-5 rounded-lg flex justify-center mb-4 shadow-xl/20">
+            <img src="./userimg/IMG_3884.JPG" alt="Profile"
+              class="rounded-full w-32 shadow-xl transition duration-300" />
+          </div>
+
+          <!-- Sections Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <!-- Home Section -->
+            <div
+              class="p-5 rounded-3xl bg-gray-800 shadow-xl/60 home-menu md:h-[400px] col-span-2">
+              <div class="flex flex-col sm:flex-row items-center">
+                <div class="flex-1">
+                  <p class="text-3xl text-yellow-600 font-bold mb-2">HELLO
+                    WORLD!</p><br>
+                  <p class="text-gray-400 text-xs mb-4">
+                    I'm <span class="text-yellow-600 font-bold">a
+                      Creative</span> Frontend developer and Web designer from
+                    <span class="text-yellow-600 font-bold">Japan</span>.
+                    I create custom websites to help businesses do better
+                    online. I use <span
+                      class="text-yellow-600 font-bold">HTML</span>, <span
+                      class="text-yellow-600 font-bold">CSS</span> and <span
+                      class="text-yellow-600 font-bold">JavaScript</span>.
+                  </p><br>
+                  <div class="space-y-2">
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <i class="fa-solid fa-phone text-xl"
+                        style="color: #d5631c;"></i>
+                      <span class="text-xs">09063978426</span>
+                    </p><br>
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <i class="fa-brands fa-facebook text-2xl"
+                        style="color: #1557ff;"></i>
+                      <a target="_blank" class="text-xs"
+                        href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
+                    </p>
+                  </div>
+                </div>
+                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
+                  src="./userimg/webuse2.svg" alt="Web Use 2" />
+              </div>
+            </div>
+            <!-- End Home Section -->
+
+            <!-- Skills Section -->
+            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl  home-menu md:h-[300px]"
+              id="skill">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
+              <div class=" gap-4 items-center">
+                <!-- Skill Icons -->
+                <div class="grid grid-cols-2 gap-3 items-center space-y-4 ">
+                  <div class=" items-center">
+                    <i class="fa-brands fa-html5 text-5xl"
+                      style="color: #ff3030;"></i>
+                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;HTML</span>
+                  </div>
+                  <div class=" items-center ">
+                    <i class="fa-brands fa-css3-alt text-5xl"
+                      style="color: #30a5ff;"></i>
+                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;CSS</span>
+                  </div>
+                  <div class=" items-center ">
+                    <i class="fa-brands fa-bootstrap text-5xl"
+                      style="color: #4416ff;"></i>
+                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
+                  </div>
+                  <div class=" items-center ">
+                    <i class="fa-brands fa-js text-5xl"
+                      style="color: #ffcc12;"></i>
+                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
+                  </div>
+                </div>
+                <!-- Skill Progress Bars (hidden on mobile) -->
+              </div>
+            </div>
+            <!-- End Skills Section -->
+
+            <!-- Need Website Section -->
+            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl home-menu md:h-[300px]">
+              <p class="text-3xl text-gray-400 font-bold mb-2">DO YOU</p>
+              <p class="text-3xl text-gray-400 font-bold mb-2">NEED A</p>
+              <p class="text-3xl text-gray-400 font-bold mb-4">WEBSITE?</p>
+              <p class="text-lg text-yellow-600 font-bold mb-4">What a
+                coincidence, websites are my thing!</p>
+              <div class="flex">
+                <button
+                  class="rounded-full px-6 py-3 text-shadow-lg nav-input shadow-xl cursor-pointer transition hover:-translate-y-1 hover:scale-110"
+                  style="background: #c36b00; color: #ffffff;"
+                  id="projects">
+                  My Projects!!
+                </button>
+              </div>
+            </div>
+            <!-- End Need Website Section -->
+
+            <!-- About Section -->
+            <div
+              class="p-5 rounded-3xl bg-gray-800 shadow-xl hidden about-menu  md:h-[400px] col-span-2">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">About Me</p><br>
+              <p class="text-gray-400 text-xs mb-4">
+                I was born in Ah Thoke, Ayeyarwady Division, Myanmar. Now I live
+                in Miki Town, Hyogo Division, Japan. I started learning Web
+                Development in December 2024, focusing on JavaScript, HTML, CSS,
+                and Bootstrap. You can view my learning projects in the <span
+                  class="text-yellow-600 font-bold">Projects</span> section.
+              </p><br><br><br>
+              <div class="space-y-2">
+                <p class="text-gray-400 flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-xl"
+                    style="color: #d5631c;"></i>
+                  <span class="text-xs">09063978426</span>
+                </p><br>
+                <p class="text-gray-400 flex items-center gap-2">
+                  <i class="fa-brands fa-facebook text-2xl"
+                    style="color: #1557ff;"></i>
+                  <a target="_blank" class="text-xs"
+                    href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
+                </p>
+              </div>
+            </div>
+            <!-- End About Section -->
+
+            <!-- About: Skills List -->
+            <div
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl hidden about-menu md:h-[300px]">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">I'm also
+                have</p>
+              <ul class="text-gray-400 text-xs list-disc pl-5 space-y-2">
+                <li>A website design perspective.</li>
+                <li>I passed <span class="text-yellow-600">Net-Test N2 for
+                    Japanese language</span>.</li>
+                <li>I can work in accordance with Deadline.</li>
+                <li>I can work in a team and have a strong desire to learn.</li>
+                <li>I can complete tasks within the specified time.</li>
+                <li>I have good teamwork and communication skills.</li>
+              </ul>
+            </div>
+            <!-- End About: Skills List -->
+
+            <!-- About: Graduation -->
+            <div
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl hidden about-menu md:h-[300px]">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">I was graduated
+                from</p>
+              <div class="flex flex-col sm:flex-row items-center gap-4">
+                <img class="w-32 h-32 rounded-xl" src="./userimg/grauap.JPG"
+                  alt="Graduation" />
+                <p class="text-gray-400 text-xs">
+                  Hinthada Technological University, Bachelor Of Technology
+                  (2015) and Bachelor OF Engineering (2020), major in Electronic
+                  Communication.
+                  I also got the chance for Master Of Engineering but could not
+                  attend for many reasons! You can check graduated
+                  certifications in the skills section.
+                </p>
+              </div>
+            </div>
+            <!-- End About: Graduation -->
+
+            <!-- Projects Section -->
+            <div
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl hidden project-menu grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 col-span-2">
+              <!-- Example Project Card -->
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Online
+                  Shopping</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/olineshop.jpeg" alt="Online Shopping" />
+              </div>
+              <!-- Repeat for other projects -->
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Project
+                  Header</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/webuser1.jpeg" alt="Project Header" />
+              </div>
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Project
+                  Header</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/webuser1.jpeg" alt="Project Header" />
+              </div>
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Project
+                  Header</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/webuser1.jpeg" alt="Project Header" />
+              </div>
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Project
+                  Header</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/webuser1.jpeg" alt="Project Header" />
+              </div>
+              <div
+                class="shadow-xl bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
+                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2">Project
+                  Header</p>
+                <img class="rounded-xl shadow-xl w-full"
+                  src="./userimg/webuser1.jpeg" alt="Project Header" />
+              </div>
+            </div>
+            <!-- End Projects Section -->
+
+            <!-- Contact Section -->
+            <div
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl hidden contact-menu col-span-2">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">Contact</p>
+              <div class="flex flex-col sm:flex-row items-center">
+                <div class="flex-1">
+                  <p class="text-3xl text-yellow-600 font-bold mb-2">HELLO
+                    WORLD!</p>
+                  <p class="text-gray-400 text-xs mb-4">
+                    I'm <span class="text-yellow-600 font-bold">a
+                      Creative</span> Frontend developer and Web designer from
+                    <span class="text-yellow-600 font-bold">Japan</span>.
+                    I create custom websites to help businesses do better
+                    online. I use <span
+                      class="text-yellow-600 font-bold">HTML</span>, <span
+                      class="text-yellow-600 font-bold">CSS</span> and <span
+                      class="text-yellow-600 font-bold">JavaScript</span>.
+                  </p>
+                  <div class="space-y-2">
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <i class="fa-solid fa-phone text-xl"
+                        style="color: #d5631c;"></i>
+                      <span class="text-xs">09063978426</span>
+                    </p>
+                    <p class="text-gray-400 flex items-center gap-2">
+                      <i class="fa-brands fa-facebook text-2xl"
+                        style="color: #1557ff;"></i>
+                      <a target="_blank" class="text-xs"
+                        href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
+                    </p>
+                  </div>
+                </div>
+                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
+                  src="./userimg/webuse2.svg" alt="Web Use 2" />
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6">
+                <button
+                  class="rounded-full py-2 px-4 text-shadow-lg nav-input shadow-xl cursor-pointer transition hover:-translate-y-1 hover:scale-110 text-xl"
+                  style="background: #ff9a1e;">
+                  Call <i class="fa-solid fa-phone text-xl ml-2"
+                    style="color: #0856ff;"></i>
+                </button>
+                <button
+                  class="rounded-full py-2 px-4 text-shadow-lg nav-input shadow-xl cursor-pointer transition hover:-translate-y-1 hover:scale-110 text-xl"
+                  style="background: #ff9a1e;">
+                  Facebook <i class="fa-brands fa-facebook text-xl ml-2"
+                    style="color: #0856ff;"></i>
+                </button>
+                <button
+                  class="rounded-full py-2 px-4 text-shadow-lg nav-input shadow-xl cursor-pointer transition hover:-translate-y-1 hover:scale-110 text-xl"
+                  style="background: #ff9a1e;">
+                  Email <i class="fa-solid fa-paper-plane text-xl ml-2"
+                    style="color: #0856ff;"></i>
+                </button>
+              </div>
+            </div>
+            <!-- End Contact Section -->
+          </div>
+          <!-- End Sections Grid -->
+        </section>
+        <!-- End Main Sections -->
+      </div>
+    </main>
+    <!-- End Main Content -->
+
+    <!-- jQuery for menu toggle (mobile) -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+  </body>
+  <script src="app.js"></script>
+</html>

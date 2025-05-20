@@ -18,7 +18,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $(".loading-page").addClass("hidden");
       $(".main-page").removeClass("hidden");
-    }, 3000);
+    }, 1000);
   });
 
 $(document).on("click", "#home", function () {
