@@ -13,7 +13,8 @@
   </head>
   <body class="bg-slate-800 scroll-smooth">
     <!-- Loading Screen -->
-    <div class="loading-page h-screen flex justify-center items-center shadow-xl/60">
+    <div
+      class="loading-page h-screen flex justify-center items-center shadow-xl/60">
       <div>
         <img
           class="w-24 h-24 shadow-xl rounded-full border-4 border-gray-600"
@@ -25,15 +26,18 @@
             style="color: #ffffff;"></i>
           Loading
         </p><br><br>
-        <p class="text-yellow-500 text-xs animate-ping">&nbsp;&nbsp;&nbsp;&nbsp;(Please
+        <p
+          class="text-yellow-500 text-xs animate-ping">&nbsp;&nbsp;&nbsp;&nbsp;(Please
           wait....)</p>
       </div>
     </div>
     <!-- End Loading Screen -->
 
     <!-- Main Content -->
+    <div class="moving-text text-white">Hi, Hello, Hola</div>
     <main
       class="main-page hidden min-h-screen flex justify-center items-center ">
+
       <div
         class="w-full max-w-7xl mx-auto p-2 sm:p-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-4 rounded-3xl  h-screen ">
         <!-- Sidebar/Profile (hidden on mobile) -->
@@ -69,7 +73,7 @@
                 class="animate-ping">)</span>
             </p>
           </nav>
-          <br><br>
+          <br />
           <img src="./userimg/webuse.svg" alt="Web Use"
             class="mx-auto w-40 mt-5" />
         </aside>
@@ -122,12 +126,12 @@
           <!-- Responsive Profile for Mobile -->
           <div
             class="md:hidden bg-gray-800 p-5 rounded-lg flex justify-center shadow-xl/30 m-3">
-            <img  src="./userimg/IMG_3884.JPG" alt="Profile"
+            <img src="./userimg/IMG_3884.JPG" alt="Profile"
               class="rounded-full w-32 shadow-xl/50 transition duration-300" />
           </div>
 
           <!-- Sections Grid -->
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-3">
             <!-- Home Section -->
             <div
               class="p-5 rounded-3xl bg-gray-800 shadow-xl/50 home-menu md:h-[400px] col-span-2">
@@ -166,31 +170,37 @@
             <!-- End Home Section -->
 
             <!-- Skills Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  home-menu md:h-[300px]"
+            <div
+              class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  home-menu md:h-[300px] col-span-2 lg:col-span-1"
               id="skill">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
+              <p
+                class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
               <div class=" gap-4 items-center">
                 <!-- Skill Icons -->
                 <div class="grid grid-cols-2 gap-3 items-center space-y-4 ">
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center ">
                     <i class="fa-brands fa-html5 text-5xl "
                       style="color: #ff3030;"></i>
-                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;HTML</span>
+                    <span class="text-xl mt-1 text-gray-400">
+                      &nbsp;&nbsp;HTML</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center ">
                     <i class="fa-brands fa-css3-alt text-5xl"
                       style="color: #30a5ff;"></i>
-                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;CSS</span>
+                    <span class="text-xl mt-1 text-gray-400">
+                      &nbsp;&nbsp;CSS</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill ">
+                  <div class=" items-center ">
                     <i class="fa-brands fa-bootstrap text-5xl"
                       style="color: #4416ff;"></i>
-                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
+                    <span
+                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center ">
                     <i class="fa-brands fa-js text-5xl"
                       style="color: #ffcc12;"></i>
-                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
+                    <span
+                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
                   </div>
                 </div>
                 <!-- Skill Progress Bars (hidden on mobile) -->
@@ -199,7 +209,8 @@
             <!-- End Skills Section -->
 
             <!-- Need Website Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 home-menu md:h-[300px]">
+            <div
+              class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 home-menu md:h-[300px] col-span-2 lg:col-span-1">
               <p class="text-3xl text-gray-400 font-bold mb-2">DO YOU</p>
               <p class="text-3xl text-gray-400 font-bold mb-2">NEED A</p>
               <p class="text-3xl text-gray-400 font-bold mb-4">WEBSITE?</p>
@@ -215,11 +226,14 @@
               </div>
             </div>
             <!-- End Need Website Section -->
+          </div>
 
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 m-3">
             <!-- About Section -->
             <div
-              class="p-5 rounded-3xl bg-gray-800 shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2 ">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">About Me</p><br>
+              class="p-5 rounded-3xl bg-gray-800 shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2">
+              <p class="text-3xl text-yellow-600 font-bold mb-4">About
+                Me</p><br>
               <p class="text-gray-400 text-xs mb-4">
                 I was born in Ah Thoke, Ayeyarwady Division, Myanmar. Now I live
                 in Miki Town, Hyogo Division, Japan. I started learning Web
@@ -245,7 +259,7 @@
 
             <!-- About: Skills List -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden about-menu md:h-[300px]">
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden about-menu md:h-[300px] col-span-2 lg:col-span-1">
               <p class="text-3xl text-yellow-600 font-bold mb-4">I'm also
                 have</p>
               <ul class="text-gray-400 text-xs list-disc pl-5 space-y-2">
@@ -262,7 +276,7 @@
 
             <!-- About: Graduation -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/60 hidden about-menu md:h-[300px]">
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl/60 hidden about-menu md:h-[300px] col-span-2 lg:col-span-1">
               <p class="text-3xl text-yellow-600 font-bold mb-4">I was graduated
                 from</p>
               <div class="flex flex-col sm:flex-row items-center gap-4">
@@ -279,14 +293,16 @@
               </div>
             </div>
             <!-- End About: Graduation -->
-
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-3">
             <!-- Projects Section -->
             <div
               class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden project-menu grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 col-span-2 ">
               <!-- Example Project Card -->
               <div
                 class="shadow-xl/50 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Online
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Online
                   Shopping</p>
                 <img class="rounded-xl shadow-xl w-full"
                   src="./userimg/olineshop.jpeg" alt="Online Shopping" />
@@ -294,42 +310,48 @@
               <!-- Repeat for other projects -->
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
             </div>
             <!-- End Projects Section -->
-
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-3">
             <!-- Contact Section -->
             <div
               class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden contact-menu col-span-2 md:h-[700px]">

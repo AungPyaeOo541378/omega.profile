@@ -1,0 +1,25 @@
+.hover-skill:hover {
+  background-color: rgb(29, 27, 51);
+  padding: 3px;
+  padding-left: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+}
+
+.moving-text {
+  position: absolute;
+  text-wrap: nowrap;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  animation: moveText 18s linear infinite;
+}
+
+@keyframes moveText {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
