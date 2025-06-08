@@ -18,7 +18,7 @@ $(document).ready(function () {
     setTimeout(() => {
       $(".loading-page").addClass("hidden");
       $(".main-page").removeClass("hidden");
-    }, 4000);
+    }, 1000);
   });
 
 $(document).on("click", "#home", function () {
@@ -85,3 +85,43 @@ $(document).on("click", "#projects", function () {
   $(document).on("click", ".needweb", function () {
     $(".needin").addClass("bg-gray-900 shadow-xl/60");
   });
+
+  //Black & white color buttons
+// var colorBtn = document.querySelector(".color-btn");
+// colorBtn.addEventListener("click",function () {
+//   console.log("nice");
+//   var body = document.querySelector("#main-body");
+  
+// });
+
+$(document).on("click", ".color-btn", function () {
+  console.log("nice btn");
+  $(".color-btn").each(function () {
+    $(this).addClass("hidden");
+  });
+  $(".bColor-btn").each(function () {
+    $(this).removeClass("hidden");
+  });
+  //main-outer color
+  $(".main-color").each(function () {
+    $(this).removeClass("bg-gray-900");
+  });
+  $(".main-color").each(function () {
+    $(this).addClass("bg-gray-600");
+  });
+//main-inner color
+  $(".mainInner-color").each(function () {
+    $(this).removeClass("bg-gray-800");
+  });
+  $(".mainInner-color").each(function () {
+    $(this).addClass("bg-gray-600");
+  });
+  //main-page-color
+  $(".main-body").each(function () {
+    $(this).removeClass("bg-slate-800");
+  });
+  $(".main-body").each(function () {
+    $(this).addClass("bg-slate-400");
+  });
+});
+

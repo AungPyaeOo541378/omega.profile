@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet">
   </head>
-  <body class="bg-slate-800 scroll-smooth">
+  <body class="bg-slate-800 scroll-smooth main-body" >
     <!-- Loading Screen -->
     <div class="loading-page h-screen flex justify-center items-center shadow-xl/60">
       <div>
@@ -24,8 +24,8 @@
           <i class="fa-solid fa-spinner fa-spin text-lg"
             style="color: #ffffff;"></i>
           Loading
-        </p><br><br>
-        <p class="text-yellow-500 text-xs animate-ping">&nbsp;&nbsp;&nbsp;&nbsp;(Please
+        </p><br>
+        <p class="text-yellow-500 text-xs fa-beat-fade">&nbsp;&nbsp;&nbsp;&nbsp;(Please
           wait....)</p>
       </div>
     </div>
@@ -38,7 +38,7 @@
         class="w-full max-w-7xl mx-auto p-2 sm:p-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-4 rounded-3xl  h-screen ">
         <!-- Sidebar/Profile (hidden on mobile) -->
         <aside
-          class="hidden md:block bg-gray-900 p-5 col-span-1 rounded-3xl shadow-xl/60">
+          class="hidden md:block bg-gray-900 main-color p-5 col-span-1 rounded-3xl shadow-xl/60">
           <img src="./userimg/IMG_3884.JPG" alt="Profile"
             class="rounded-full w-40 mx-auto mt-5 shadow-xl/60 transition duration-300" />
           <br /><br />
@@ -69,7 +69,8 @@
                 class="animate-ping">)</span>
             </p>
           </nav>
-          <br><br>
+          <br>
+          <br>
           <img src="./userimg/webuse.svg" alt="Web Use"
             class="mx-auto w-40 mt-5" />
         </aside>
@@ -77,13 +78,13 @@
 
         <!-- Main Sections -->
         <section
-          class="col-span-1 md:col-span-3 bg-gray-900 rounded-3xl shadow-xl/60 flex flex-col ">
+          class="col-span-1 md:col-span-3 bg-gray-900 main-color rounded-3xl shadow-xl/60 flex flex-col ">
           <!-- Top Navbar (responsive) -->
           <nav class="bg-gray-700 rounded-t-3xl shadow-xl/30 mb-4">
             <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
               <div class="flex h-16 items-center justify-between">
                 <!-- Navbar Links -->
-                <div class="flex-1 flex items-center justify-center">
+                <div class="flex-1 flex items-center justify-between">
                   <div id="navbar-links" class="flex space-x-4">
                     <a href="#"
                       class="rounded-md px-3 py-2 text-sm font-medium text-white nav-input bg-gray-900 shadow-xl/60"
@@ -98,6 +99,12 @@
                       class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
                       id="contact">Contact</a>
                   </div>
+                  <div class="">
+                    <span class="color-btn cursor-pointer"> <i class="fa-solid fa-toggle-off text-3xl" style="color: #ffffff;"></i></span>
+                    <span class="bColor-btn cursor-pointer hidden "><i class="fa-solid fa-toggle-on text-3xl"></i></span>
+                    
+                  </div>
+                
                 </div>
               </div>
               <!-- Mobile Menu Dropdown -->
@@ -130,7 +137,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 m-3">
             <!-- Home Section -->
             <div
-              class="p-5 rounded-3xl bg-gray-800 shadow-xl/50 home-menu md:h-[400px] col-span-2">
+              class="p-5 rounded-3xl bg-gray-800 mainInner-color shadow-xl/50 home-menu md:h-[400px] col-span-2">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex-1">
                   <p class="text-3xl text-yellow-600 font-bold mb-2">HELLO
@@ -157,6 +164,8 @@
                       <a target="_blank" class="text-xs"
                         href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
                     </p>
+                    <br>
+            
                   </div>
                 </div>
                 <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
@@ -166,28 +175,28 @@
             <!-- End Home Section -->
 
             <!-- Skills Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  home-menu md:h-[300px]"
+            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  mainInner-color home-menu md:h-[300px]"
               id="skill">
               <p class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
               <div class=" gap-4 items-center">
                 <!-- Skill Icons -->
                 <div class="grid grid-cols-2 gap-3 items-center space-y-4 ">
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center  ">
                     <i class="fa-brands fa-html5 text-5xl "
                       style="color: #ff3030;"></i>
                     <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;HTML</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center  ">
                     <i class="fa-brands fa-css3-alt text-5xl"
                       style="color: #30a5ff;"></i>
                     <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;CSS</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill ">
+                  <div class=" items-center   ">
                     <i class="fa-brands fa-bootstrap text-5xl"
                       style="color: #4416ff;"></i>
                     <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
                   </div>
-                  <div class=" items-center cursor-pointer hover:-translate-y-2 transition hover-skill">
+                  <div class=" items-center  ">
                     <i class="fa-brands fa-js text-5xl"
                       style="color: #ffcc12;"></i>
                     <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
@@ -199,7 +208,7 @@
             <!-- End Skills Section -->
 
             <!-- Need Website Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 home-menu md:h-[300px]">
+            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 mainInner-color home-menu md:h-[300px]">
               <p class="text-3xl text-gray-400 font-bold mb-2">DO YOU</p>
               <p class="text-3xl text-gray-400 font-bold mb-2">NEED A</p>
               <p class="text-3xl text-gray-400 font-bold mb-4">WEBSITE?</p>
@@ -218,7 +227,7 @@
 
             <!-- About Section -->
             <div
-              class="p-5 rounded-3xl bg-gray-800 shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2 ">
+              class="p-5 rounded-3xl bg-gray-800 mainInner-color shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2 ">
               <p class="text-3xl text-yellow-600 font-bold mb-4">About Me</p><br>
               <p class="text-gray-400 text-xs mb-4">
                 I was born in Ah Thoke, Ayeyarwady Division, Myanmar. Now I live
@@ -245,7 +254,7 @@
 
             <!-- About: Skills List -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden about-menu md:h-[300px]">
+              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden mainInner-color about-menu md:h-[300px]">
               <p class="text-3xl text-yellow-600 font-bold mb-4">I'm also
                 have</p>
               <ul class="text-gray-400 text-xs list-disc pl-5 space-y-2">
@@ -262,7 +271,7 @@
 
             <!-- About: Graduation -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/60 hidden about-menu md:h-[300px]">
+              class="bg-gray-800 mainInner-color p-5 rounded-3xl shadow-xl/60 hidden about-menu md:h-[300px]">
               <p class="text-3xl text-yellow-600 font-bold mb-4">I was graduated
                 from</p>
               <div class="flex flex-col sm:flex-row items-center gap-4">
@@ -282,7 +291,7 @@
 
             <!-- Projects Section -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden project-menu grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 col-span-2 ">
+              class="bg-gray-800 p-5 mainInner-color rounded-3xl shadow-xl/50 hidden project-menu grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 col-span-2 ">
               <!-- Example Project Card -->
               <div
                 class="shadow-xl/50 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
@@ -332,7 +341,7 @@
 
             <!-- Contact Section -->
             <div
-              class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden contact-menu col-span-2 md:h-[700px]">
+              class="bg-gray-800 mainInner-color p-5 rounded-3xl shadow-xl/50 hidden contact-menu col-span-2 md:h-[700px]">
               <p class="text-3xl text-yellow-600 font-bold mb-4">Contact</p>
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex-1">
