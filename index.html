@@ -11,9 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet">
   </head>
-  <body class="bg-slate-800 scroll-smooth main-body" >
+  <body class="bg-slate-800 scroll-smooth main-body">
     <!-- Loading Screen -->
-    <div class="loading-page h-screen flex justify-center items-center shadow-xl/60">
+    <div
+      class="loading-page h-screen flex justify-center items-center shadow-xl/60">
       <div>
         <img
           class="w-24 h-24 shadow-xl rounded-full border-4 border-gray-600"
@@ -25,7 +26,8 @@
             style="color: #ffffff;"></i>
           Loading
         </p><br>
-        <p class="text-yellow-500 text-xs fa-beat-fade">&nbsp;&nbsp;&nbsp;&nbsp;(Please
+        <p
+          class="text-yellow-500 text-xs fa-beat-fade">&nbsp;&nbsp;&nbsp;&nbsp;(Please
           wait....)</p>
       </div>
     </div>
@@ -43,7 +45,7 @@
             class="rounded-full w-40 mx-auto mt-5 shadow-xl/60 transition duration-300" />
           <br /><br />
           <p
-            class="text-yellow-600 text-center text-2xl font-bold hover:text-yellow-400 cursor-pointer transition">Mr.
+            class="change-color-text text-center text-2xl font-bold hover:text-yellow-400 cursor-pointer transition">Mr.
             Aung Pyae Oo</p>
           <br />
           <!-- Sidebar Navigation -->
@@ -72,7 +74,18 @@
           <br>
           <br>
           <img src="./userimg/webuse.svg" alt="Web Use"
-            class="mx-auto w-40 mt-5" />
+            class="mx-auto w-40 mt-5" /> <br><br>
+         <!--color patten-->
+          <div>
+            <span style="color: #ff893b;">Color for Title</span>
+            <div class=" p-5">
+              <i class="fa-solid fa-square text-3xl cursor-pointer red-btn me-3" style="color: #dc2d16;"></i>
+              <i class="fa-solid fa-square text-3xl cursor-pointer yellow-btn me-3" style="color: #ff893b;"></i>
+              <i class="fa-solid fa-square text-3xl cursor-pointer white-btn me-3" style="color: #ebe9e2;"></i>
+              <i class="fa-solid fa-square text-3xl cursor-pointer blue-btn me-3" style="color: #2038ed;"></i>
+            </div>
+          </div>
+          <!--color patten end-->
         </aside>
         <!-- End Sidebar/Profile -->
 
@@ -99,12 +112,25 @@
                       class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
                       id="contact">Contact</a>
                   </div>
-                  <div class="">
-                    <span class="color-btn cursor-pointer"> <i class="fa-solid fa-toggle-off text-3xl" style="color: #ffffff;"></i></span>
-                    <span class="bColor-btn cursor-pointer hidden "><i class="fa-solid fa-toggle-on text-3xl"></i></span>
-                    
+                  <div class>
+                    <span class="cursor-pointer me-2 text-blue-600 blue-btn">
+                      Blue
+                    </span>
+                    <span
+                      class="cursor-pointer me-2  text-yellow-600 yellow-btn">
+                      Yellow
+                    </span>
+                    <span
+                      class="cursor-pointer me-2  text-red-600 red-btn">
+                      Red
+                    </span>
+                    <span class="color-btn cursor-pointer">
+                      <i class="fa-solid fa-toggle-off text-3xl switch-btn"
+                        style="color: #ffffff;">
+                      </i>
+                    </span>
                   </div>
-                
+
                 </div>
               </div>
               <!-- Mobile Menu Dropdown -->
@@ -129,7 +155,7 @@
           <!-- Responsive Profile for Mobile -->
           <div
             class="md:hidden bg-gray-800 p-5 rounded-lg flex justify-center shadow-xl/30 m-3">
-            <img  src="./userimg/IMG_3884.JPG" alt="Profile"
+            <img src="./userimg/IMG_3884.JPG" alt="Profile"
               class="rounded-full w-32 shadow-xl/50 transition duration-300" />
           </div>
 
@@ -140,7 +166,8 @@
               class="p-5 rounded-3xl bg-gray-800 mainInner-color shadow-xl/50 home-menu md:h-[400px] col-span-2">
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex-1">
-                  <p class="text-3xl text-yellow-600 font-bold mb-2">HELLO
+                  <p
+                    class="text-3xl font-bold mb-2 change-color-text">HELLO
                     WORLD!</p><br>
                   <p class="text-gray-400 text-xs mb-4">
                     I'm <span class="text-yellow-600 font-bold">a
@@ -165,7 +192,7 @@
                         href="https://shorturl.at/neGTK">https://shorturl.at/neGTK</a>
                     </p>
                     <br>
-            
+
                   </div>
                 </div>
                 <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
@@ -175,31 +202,37 @@
             <!-- End Home Section -->
 
             <!-- Skills Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  mainInner-color home-menu md:h-[300px]"
+            <div
+              class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  mainInner-color home-menu md:h-[300px]"
               id="skill">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
+              <p
+                class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
               <div class=" gap-4 items-center">
                 <!-- Skill Icons -->
                 <div class="grid grid-cols-2 gap-3 items-center space-y-4 ">
                   <div class=" items-center  ">
                     <i class="fa-brands fa-html5 text-5xl "
                       style="color: #ff3030;"></i>
-                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;HTML</span>
+                    <span class="text-xl mt-1 text-gray-400">
+                      &nbsp;&nbsp;HTML</span>
                   </div>
                   <div class=" items-center  ">
                     <i class="fa-brands fa-css3-alt text-5xl"
                       style="color: #30a5ff;"></i>
-                    <span class="text-xl mt-1 text-gray-400"> &nbsp;&nbsp;CSS</span>
+                    <span class="text-xl mt-1 text-gray-400">
+                      &nbsp;&nbsp;CSS</span>
                   </div>
                   <div class=" items-center   ">
                     <i class="fa-brands fa-bootstrap text-5xl"
                       style="color: #4416ff;"></i>
-                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
+                    <span
+                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
                   </div>
                   <div class=" items-center  ">
                     <i class="fa-brands fa-js text-5xl"
                       style="color: #ffcc12;"></i>
-                    <span class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
+                    <span
+                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
                   </div>
                 </div>
                 <!-- Skill Progress Bars (hidden on mobile) -->
@@ -208,7 +241,8 @@
             <!-- End Skills Section -->
 
             <!-- Need Website Section -->
-            <div class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 mainInner-color home-menu md:h-[300px]">
+            <div
+              class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 mainInner-color home-menu md:h-[300px]">
               <p class="text-3xl text-gray-400 font-bold mb-2">DO YOU</p>
               <p class="text-3xl text-gray-400 font-bold mb-2">NEED A</p>
               <p class="text-3xl text-gray-400 font-bold mb-4">WEBSITE?</p>
@@ -228,7 +262,8 @@
             <!-- About Section -->
             <div
               class="p-5 rounded-3xl bg-gray-800 mainInner-color shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2 ">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">About Me</p><br>
+              <p class="text-3xl text-yellow-600 font-bold mb-4">About
+                Me</p><br>
               <p class="text-gray-400 text-xs mb-4">
                 I was born in Ah Thoke, Ayeyarwady Division, Myanmar. Now I live
                 in Miki Town, Hyogo Division, Japan. I started learning Web
@@ -295,7 +330,8 @@
               <!-- Example Project Card -->
               <div
                 class="shadow-xl/50 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Online
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Online
                   Shopping</p>
                 <img class="rounded-xl shadow-xl w-full"
                   src="./userimg/olineshop.jpeg" alt="Online Shopping" />
@@ -303,35 +339,40 @@
               <!-- Repeat for other projects -->
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
               </div>
               <div
                 class="shadow-xl/60 bg-slate-500 rounded-xl p-2 cursor-pointer hover:-translate-y-2 transition">
-                <p class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
+                <p
+                  class="bg-black text-gray-400 rounded-xl p-2 mb-2 shadow-xl/60">Project
                   Header</p>
                 <img class="rounded-xl shadow-xl/20 w-full"
                   src="./userimg/webuser1.jpeg" alt="Project Header" />
