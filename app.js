@@ -17,7 +17,7 @@ $(document).ready(function () {
   setTimeout(() => {
     $(".loading-page").addClass("hidden");
     $(".main-page").removeClass("hidden");
-  }, 1000);
+  }, 4000);
 });
 
 $(document).on("click", "#home", function () {
@@ -98,11 +98,15 @@ $(document).on("click", ".color-btn", function () {
     $(".switch-btn").removeClass("fa-toggle-off");
     $(".switch-btn").addClass("fa-toggle-on");
     $(".switch-btn").css("color", "slate");
+    $(".webImgHide").removeClass("hidden");
+    $(".webImgShow").addClass("hidden");
     
   } else {
     $(".switch-btn").removeClass("fa-toggle-on");
     $(".switch-btn").addClass("fa-toggle-off");
     $(".switch-btn").css("color", "white");
+    $(".webImgHide").addClass("hidden");
+    $(".webImgShow").removeClass("hidden");
   }
 
   //main-outer color
@@ -131,9 +135,20 @@ $(document).on("click", ".color-btn", function () {
 $(document).on("click", ".blue-btn", function () {
   changeColorBtn("blue");
 });
-
+$(document).on("click",".white-btn", function (){
+  changeColorBtn("white");
+});
 $(document).on("click", ".yellow-btn", function () {
   changeColorBtn("yellow");
+});
+$(document).on("click", ".green-btn", function () {
+  changeColorBtn("green");
+});
+$(document).on("click", ".pink-btn", function () {
+  changeColorBtn("pink");
+});
+$(document).on("click", ".gray-btn", function () {
+  changeColorBtn("gray");
 });
 
 $(document).on("click", ".red-btn", function () {

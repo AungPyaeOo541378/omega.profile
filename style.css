@@ -11,15 +11,15 @@
   text-wrap: nowrap;
   font-size: 2em;
   font-family: Arial, sans-serif;
-  animation: moveText 18s linear infinite;
+  animation: moveText 4s linear infinite;
 }
 
 @keyframes moveText {
   0% {
-    right: 0%;
+    right: 20%;
   }
 
   100% {
-    right: 100%;
+    right: 70%;
   }
 }

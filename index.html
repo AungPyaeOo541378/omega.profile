@@ -21,15 +21,20 @@
           src="./userimg/a.jpeg.png"
           alt="Loading User" />
         <br /><br />
-        <p class="text-sm text-white flex items-center justify-center gap-2">
+        <p class="text-sm text-white flex items-center justify-center gap-2 ">
           <i class="fa-solid fa-spinner fa-spin text-lg"
             style="color: #ffffff;"></i>
           Loading
         </p><br>
         <p
-          class="text-yellow-500 text-xs fa-beat-fade">&nbsp;&nbsp;&nbsp;&nbsp;(Please
-          wait....)</p>
+          class="text-yellow-500 text-xs fa-beat-fade">
+          &nbsp;&nbsp;&nbsp;&nbsp;(Please
+          wait....)</p><br><br><br>
+
+          <span class="moving-text text-yellow-500"><i class="fa-solid fa-shuttle-space fa-flip-horizontal " style="color: #FFD43B;"></i>====</span>
+          
       </div>
+     
     </div>
     <!-- End Loading Screen -->
 
@@ -45,7 +50,7 @@
             class="rounded-full w-40 mx-auto mt-5 shadow-xl/60 transition duration-300" />
           <br /><br />
           <p
-            class="change-color-text text-center text-2xl font-bold hover:text-yellow-400 cursor-pointer transition">Mr.
+            class="change-color-text text-yellow-400 text-center text-2xl font-bold hover:text-yellow-400 cursor-pointer transition">Mr.
             Aung Pyae Oo</p>
           <br />
           <!-- Sidebar Navigation -->
@@ -77,12 +82,15 @@
             class="mx-auto w-40 mt-5" /> <br><br>
          <!--color patten-->
           <div>
-            <span style="color: #ff893b;">Color for Title</span>
+            <span class="text-yellow-400 change-color-text">Colors for Title</span>
             <div class=" p-5">
-              <i class="fa-solid fa-square text-3xl cursor-pointer red-btn me-3" style="color: #dc2d16;"></i>
-              <i class="fa-solid fa-square text-3xl cursor-pointer yellow-btn me-3" style="color: #ff893b;"></i>
-              <i class="fa-solid fa-square text-3xl cursor-pointer white-btn me-3" style="color: #ebe9e2;"></i>
-              <i class="fa-solid fa-square text-3xl cursor-pointer blue-btn me-3" style="color: #2038ed;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 red-btn me-2" style="color: #ff4a32;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 yellow-btn me-2" style="color: #ff893b;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 white-btn me-2" style="color: #ebe9e2;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 blue-btn me-2" style="color: #3e55ff;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 green-btn me-2" style="color: #25ff58;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 gray-btn me-2" style="color: #7c7c7c;"></i>
+              <i class="fa-solid fa-square text-3xl shadow-xl cursor-pointer transition  hover:scale-120 pink-btn me-2" style="color: #f93dae;"></i>
             </div>
           </div>
           <!--color patten end-->
@@ -112,18 +120,8 @@
                       class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 nav-input"
                       id="contact">Contact</a>
                   </div>
-                  <div class>
-                    <span class="cursor-pointer me-2 text-blue-600 blue-btn">
-                      Blue
-                    </span>
-                    <span
-                      class="cursor-pointer me-2  text-yellow-600 yellow-btn">
-                      Yellow
-                    </span>
-                    <span
-                      class="cursor-pointer me-2  text-red-600 red-btn">
-                      Red
-                    </span>
+                  <div>
+                   
                     <span class="color-btn cursor-pointer">
                       <i class="fa-solid fa-toggle-off text-3xl switch-btn"
                         style="color: #ffffff;">
@@ -154,7 +152,7 @@
 
           <!-- Responsive Profile for Mobile -->
           <div
-            class="md:hidden bg-gray-800 p-5 rounded-lg flex justify-center shadow-xl/30 m-3">
+            class="md:hidden bg-gray-400 p-5 rounded-lg flex justify-center shadow-xl/30 m-3 ">
             <img src="./userimg/IMG_3884.JPG" alt="Profile"
               class="rounded-full w-32 shadow-xl/50 transition duration-300" />
           </div>
@@ -167,9 +165,9 @@
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex-1">
                   <p
-                    class="text-3xl font-bold mb-2 change-color-text">HELLO
+                    class="text-3xl text-yellow-400 font-bold mb-2 change-color-text">HELLO
                     WORLD!</p><br>
-                  <p class="text-gray-400 text-xs mb-4">
+                  <p class="text-gray-400 text-xs mb-4 change-color-text">
                     I'm <span class="text-yellow-600 font-bold">a
                       Creative</span> Frontend developer and Web designer from
                     <span class="text-yellow-600 font-bold">Japan</span>.
@@ -180,12 +178,12 @@
                       class="text-yellow-600 font-bold">JavaScript</span>.
                   </p><br>
                   <div class="space-y-2">
-                    <p class="text-gray-400 flex items-center gap-2">
+                    <p class="text-gray-200 flex items-center gap-2">
                       <i class="fa-solid fa-phone text-xl"
                         style="color: #d5631c;"></i>
                       <span class="text-xs">09063978426</span>
                     </p><br>
-                    <p class="text-gray-400 flex items-center gap-2">
+                    <p class="text-gray-200 flex items-center gap-2">
                       <i class="fa-brands fa-facebook text-2xl"
                         style="color: #1557ff;"></i>
                       <a target="_blank" class="text-xs"
@@ -195,8 +193,10 @@
 
                   </div>
                 </div>
-                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
+                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4 webImgShow"
                   src="./userimg/webuse2.svg" alt="Web Use 2" />
+                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4 hidden webImgHide"
+                  src="./userimg/webuse.svg" alt="Web Use 2" />
               </div>
             </div>
             <!-- End Home Section -->
@@ -206,33 +206,33 @@
               class="p-5 bg-gray-800 rounded-3xl shadow-xl/50  mainInner-color home-menu md:h-[300px]"
               id="skill">
               <p
-                class="text-3xl text-yellow-600 font-bold mb-4">Skills</p><br><br>
+                class="text-3xl text-yellow-400 font-bold mb-4 change-color-text" >Skills</p><br><br>
               <div class=" gap-4 items-center">
                 <!-- Skill Icons -->
                 <div class="grid grid-cols-2 gap-3 items-center space-y-4 ">
                   <div class=" items-center  ">
                     <i class="fa-brands fa-html5 text-5xl "
                       style="color: #ff3030;"></i>
-                    <span class="text-xl mt-1 text-gray-400">
+                    <span class="text-xl mt-1 text-yellow-600">
                       &nbsp;&nbsp;HTML</span>
                   </div>
                   <div class=" items-center  ">
                     <i class="fa-brands fa-css3-alt text-5xl"
                       style="color: #30a5ff;"></i>
-                    <span class="text-xl mt-1 text-gray-400">
+                    <span class="text-xl mt-1 text-yellow-600">
                       &nbsp;&nbsp;CSS</span>
                   </div>
                   <div class=" items-center   ">
                     <i class="fa-brands fa-bootstrap text-5xl"
                       style="color: #4416ff;"></i>
                     <span
-                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Bootstrap</span>
+                      class="text-xl mt-1 text-yellow-600">&nbsp;&nbsp;Bootstrap</span>
                   </div>
                   <div class=" items-center  ">
                     <i class="fa-brands fa-js text-5xl"
                       style="color: #ffcc12;"></i>
                     <span
-                      class="text-xl mt-1 text-gray-400">&nbsp;&nbsp;Java-Script</span>
+                      class="text-xl mt-1 text-yellow-600">&nbsp;&nbsp;Java-Script</span>
                   </div>
                 </div>
                 <!-- Skill Progress Bars (hidden on mobile) -->
@@ -243,10 +243,10 @@
             <!-- Need Website Section -->
             <div
               class="p-5 bg-gray-800 rounded-3xl shadow-xl/50 mainInner-color home-menu md:h-[300px]">
-              <p class="text-3xl text-gray-400 font-bold mb-2">DO YOU</p>
-              <p class="text-3xl text-gray-400 font-bold mb-2">NEED A</p>
-              <p class="text-3xl text-gray-400 font-bold mb-4">WEBSITE?</p>
-              <p class="text-lg text-yellow-600 font-bold mb-4">What a
+              <p class="text-3xl text-gray-400 font-bold mb-2 change-color-text">DO YOU</p>
+              <p class="text-3xl text-gray-400 font-bold mb-2 change-color-text">NEED A</p>
+              <p class="text-3xl text-gray-400 font-bold mb-4 change-color-text">WEBSITE?</p>
+              <p class="text-lg text-yellow-600 font-bold mb-4 change-color-text">What a
                 coincidence, websites are my thing!</p>
               <div class="flex">
                 <button
@@ -262,9 +262,9 @@
             <!-- About Section -->
             <div
               class="p-5 rounded-3xl bg-gray-800 mainInner-color shadow-xl/50 hidden about-menu  md:h-[400px] col-span-2 ">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">About
+              <p class="text-3xl text-yellow-600 font-bold mb-4 change-color-text">About
                 Me</p><br>
-              <p class="text-gray-400 text-xs mb-4">
+              <p class="text-gray-400 text-xs mb-4 change-color-text">
                 I was born in Ah Thoke, Ayeyarwady Division, Myanmar. Now I live
                 in Miki Town, Hyogo Division, Japan. I started learning Web
                 Development in December 2024, focusing on JavaScript, HTML, CSS,
@@ -290,9 +290,9 @@
             <!-- About: Skills List -->
             <div
               class="bg-gray-800 p-5 rounded-3xl shadow-xl/50 hidden mainInner-color about-menu md:h-[300px]">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">I'm also
+              <p class="text-3xl text-yellow-600 font-bold mb-4 change-color-text">I'm also
                 have</p>
-              <ul class="text-gray-400 text-xs list-disc pl-5 space-y-2">
+              <ul class="text-gray-400 text-xs list-disc pl-5 space-y-2 change-color-text">
                 <li>A website design perspective.</li>
                 <li>I passed <span class="text-yellow-600">Net-Test N2 for
                     Japanese language</span>.</li>
@@ -307,12 +307,12 @@
             <!-- About: Graduation -->
             <div
               class="bg-gray-800 mainInner-color p-5 rounded-3xl shadow-xl/60 hidden about-menu md:h-[300px]">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">I was graduated
+              <p class="text-3xl text-yellow-600 font-bold mb-4 change-color-text">I was graduated
                 from</p>
               <div class="flex flex-col sm:flex-row items-center gap-4">
                 <img class="w-32 h-32 rounded-xl" src="./userimg/grauap.JPG"
                   alt="Graduation" />
-                <p class="text-gray-400 text-xs">
+                <p class="text-gray-400 text-xs change-color-text">
                   Hinthada Technological University, Bachelor Of Technology
                   (2015) and Bachelor OF Engineering (2020), major in Electronic
                   Communication.
@@ -383,12 +383,12 @@
             <!-- Contact Section -->
             <div
               class="bg-gray-800 mainInner-color p-5 rounded-3xl shadow-xl/50 hidden contact-menu col-span-2 md:h-[700px]">
-              <p class="text-3xl text-yellow-600 font-bold mb-4">Contact</p>
+              <p class="text-3xl text-yellow-400 font-bold mb-4 change-color-text">Contact</p>
               <div class="flex flex-col sm:flex-row items-center">
                 <div class="flex-1">
-                  <p class="text-2xl text-yellow-600 font-bold mb-2 mt-2">HELLO
+                  <p class="text-2xl text-yellow-600 font-bold mb-2 mt-2 ">HELLO
                     WORLD!</p>
-                  <p class="text-gray-400 text-xs mb-4">
+                  <p class="text-gray-400 text-xs mb-4 change-color-text">
                     I'm <span class="text-yellow-600 font-bold">a
                       Creative</span> Frontend developer and Web designer from
                     <span class="text-yellow-600 font-bold">Japan</span>.
@@ -399,12 +399,12 @@
                       class="text-yellow-600 font-bold">JavaScript</span>.
                   </p><br><br>
                   <div class="space-y-2">
-                    <p class="text-gray-400 flex items-center gap-2">
+                    <p class="text-gray-200 flex items-center gap-2">
                       <i class="fa-solid fa-phone text-xl"
                         style="color: #d5631c;"></i>
                       <span class="text-xs">09063978426</span>
                     </p><br>
-                    <p class="text-gray-400 flex items-center gap-2">
+                    <p class="text-gray-200 flex items-center gap-2">
                       <i class="fa-brands fa-facebook text-2xl"
                         style="color: #1557ff;"></i>
                       <a target="_blank" class="text-xs"
@@ -412,8 +412,10 @@
                     </p><br>
                   </div>
                 </div>
-                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4"
-                  src="./userimg/webuse2.svg" alt="Web Use 2" />
+                <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4 webImgShow"
+                src="./userimg/webuse2.svg" alt="Web Use 2" />
+              <img class="w-32 h-32 sm:w-48 sm:h-48 mt-4 sm:mt-0 sm:ml-4 hidden webImgHide"
+                src="./userimg/webuse.svg" alt="Web Use 2" />
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-3 gap-20  mt-6">
                 <button
